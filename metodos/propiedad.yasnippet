@@ -1,0 +1,22 @@
+# -*- mode: snippet -*-
+# name: propiedad
+# key: pro
+# --
+// Propiedad $2
+private ${1:String} ${2:name};$0
+
+/*
+* @return $2 : Tipo -> $1
+*
+*/
+public $1 get${2:$(upcase-initials text)}() {
+    return $2;
+}
+
+/*
+* @param $2 : Tipo -> $1
+*
+*/
+public void set${2:$(upcase-initials text)}($1 $2) {
+    this.$2 = $2;
+}
